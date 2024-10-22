@@ -1,0 +1,65 @@
+h1 {
+  font-size: 28px;
+  span {
+    color: purple;
+  }
+}
+ol {
+  margin-left: -20px;
+  li {
+    font-size: 14px;
+    span {
+      color: red;
+    }
+  }
+}
+button {
+  display: inline-block;
+  color: blue;
+  height: 44px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.noteHide {
+  display: none;
+}
+form {
+  max-width: 550px;
+  fieldset {
+    background-color: #d2e9ff;
+  }
+}
+input {
+  margin: 5px 0px;
+  &.submit {
+    width: 44px;
+    height: 44px;
+  }
+  &.submit:hover {
+    cursor: pointer;
+  }
+}
+.account,
+.password {
+  width: 110px;
+}
+h3 {
+  display: inline;
+  font-size: 16px;
+}
+p {
+  display: inline;
+  &.hintStyleRed {
+    color: red;
+  }
+  &.hintStylePurple {
+    color: purple;
+  }
+}
+.formRegister h2 span {
+  color: orange;
+}
+.formSignin h2 span {
+  color: green;
+}

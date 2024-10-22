@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS axios練習 | 網遊註冊/登入</title>
+    <link rel="stylesheet" href="dist/style/all.min.css">
+  </head>
+  <body>
+    <h1>練習:<span>網遊註冊/登入API</span></h1>
+    <ol class="note">
+      <li>
+        <p>
+          此系統與後台API連動短暫記錄，<span>請不要打現實中真實帳密。</span>
+        </p>
+      </li>
+      <li>
+        <p>簡易驗證：如email沒@、無密碼、空白、重複註冊等會提醒。</p>
+      </li>
+      <li>
+        <p>
+          流程：先註冊成功後再登入，過程會根據送出資料給你回饋（歡迎隨便操作，感受系統回饋很有趣...XD）
+        </p>
+      </li>
+      <li>
+        <p>遊玩建議：email可以打『a123@gmail.com』，密碼ab123之類。</p>
+      </li>
+      <li>
+        <p>歡迎回饋bug或建議！小白工程師需要你的反饋QQ</p>
+      </li>
+    </ol>
+    <button class="hideBtn">點我隱藏/顯示上方說明</button>
+    <form class="formRegister">
+      <fieldset>
+        <legend>
+          <h2>SAO刀劍神域 Online <span>註冊</span>區</h2>
+        </legend>
+        <label for="accountRegister">帳號：</label
+        ><input
+          type="email"
+          name="account"
+          class="account"
+          id="accountRegister"
+          placeholder="請輸入email"
+        /><br />
+        <label for="passwordReg">密碼：</label
+        ><input
+          type="password"
+          name="password"
+          class="password"
+          id="passwordReg"
+          placeholder="請輸入密碼"
+        />
+        <input type="checkbox" class="showPassword" id="showPasswordReg" />
+        <label for="showPasswordReg">顯示密碼</label><br />
+        <input type="submit" value="註冊" class="submit" />
+        <h3 class="hint"></h3>
+      </fieldset>
+    </form>
+    <form class="formSignin">
+      <fieldset>
+        <legend>
+          <h2>SAO刀劍神域 Online <span>登入</span>區</h2>
+        </legend>
+        <label for="accountSignin">帳號：</label
+        ><input
+          type="email"
+          name="account"
+          class="account"
+          id="accountSignin"
+          placeholder="請輸入email"
+        /><br />
+        <label for="passwordSignin">密碼：</label
+        ><input
+          type="password"
+          name="password"
+          class="password"
+          id="passwordSignin"
+          placeholder="請輸入密碼"
+        />
+        <input type="checkbox" class="showPassword" id="showpasswordSignin" />
+        <label for="showpasswordSignin">顯示密碼</label><br />
+        <input type="submit" value="登入" class="submit" />
+        <h3 class="hint"></h3>
+      </fieldset>
+    </form>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="all.js"></script>
+  </body>
+</html>
